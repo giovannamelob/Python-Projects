@@ -9,6 +9,13 @@ This project focuses on performing time series analysis on Ethereum (ETH) price 
 - **Matplotlib**: For visualizations and plotting.
 - **Statsmodels**: For autocorrelation and partial autocorrelation analysis.
 
+## Setup Instructions
+
+To run this project, you will need to install the required Python libraries. Please ensure you have Python installed on your system, and then run the following command in your terminal or command prompt:
+
+```bash
+pip install -r requirements.txt
+
 ## Sections of the Project
 ### 1. Data Loading and Initial Exploration
 - The data is loaded from a CSV file using pandas. The `open_time` column is parsed as a date and used as the index.
