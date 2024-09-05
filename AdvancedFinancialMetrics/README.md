@@ -1,16 +1,24 @@
 # Advanced Financial Metrics
 
 ## Project Overview
-This project performs comprehensive financial analysis using Python, focusing on calculating the Sharpe Ratio for S&P 500 Futures and 10-Year Treasury Futures, constructing and analyzing a 60-40 portfolio, and adjusting for inflation. The analysis includes rolling Sharpe Ratios, risk metrics, and visualizations of cumulative returns and drawdowns.
+This project encompasses a series of Python scripts designed to analyze financial data for different investment instruments, including S&P 500 Futures, 10-Year Treasury Futures, and a diversified investment portfolio. The analysis includes calculating Sharpe Ratios, annualized returns, and portfolio risk metrics, adjusted for inflation and risk-free rates.
 
 ## Tools and Libraries Used
+Ensure you have Python 3.6+ installed on your system. The following Python libraries are required:
 - **pandas**: For data manipulation and analysis.
 - **numpy**: For numerical operations.
 - **matplotlib**: For plotting and visualization.
 - **yfinance**: For downloading financial data.
 - **scipy**: For statistical calculations, including skewness and kurtosis.
-- **arch**: For GARCH modeling (if used in your project).
 - **pandas_datareader**: For fetching inflation data from FRED.
+
+### Installation
+Clone this repository and install the required Python packages:
+
+```bash
+git clone https://github.com/yourusername/financial-data-analysis.git
+cd financial-data-analysis
+pip install -r requirements.txt
 
 ## Project Details
 
@@ -31,10 +39,3 @@ This project performs comprehensive financial analysis using Python, focusing on
 
 ### 4. Inflation Adjustment
 - **Inflation Data**: Fetches CPI data from FRED, calculates annualized inflation, and adjusts the Sharpe Ratio for inflation.
-
-## Setup and Installation
-
-Ensure you have Python installed and then install the necessary Python packages:
-
-```bash
-pip install -r requirements.txt
