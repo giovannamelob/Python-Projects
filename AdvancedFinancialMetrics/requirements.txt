@@ -3,5 +3,4 @@ numpy
 matplotlib
 yfinance
 scipy
-arch
 pandas_datareader
