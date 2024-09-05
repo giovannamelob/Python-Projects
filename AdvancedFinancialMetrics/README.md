@@ -47,3 +47,7 @@ We welcome contributions from the community. Here are some guidelines you should
 
 ## License
 This project is released under the MIT License. This allows you to use and modify the software freely for personal and commercial purposes under the conditions listed in the LICENSE file in this repository.
+
+## Contact
+- Giovanna Melo Benites - melobenitesgiovanna@gmail.com
+- Project Link: https://github.com/giovannamelob/Python-Projects/tree/main/AdvancedFinancialMetrics
