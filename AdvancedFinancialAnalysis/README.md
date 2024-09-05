@@ -1,40 +1,35 @@
 # Advanced Financial Analysis
 
 ## Project Overview
-This project encompasses various financial analysis techniques using Python, including calculating returns, volatility, and risk metrics for stock and futures data. It also covers portfolio construction, drawdowns, and statistical measures such as skewness and kurtosis. Key features include analyzing S&P 500 futures, building a risk-parity portfolio, and visualizing returns and drawdowns.
+This repository contains Python scripts for performing financial data analysis including return calculations, volatility assessments, and drawdown analyses using `yfinance` to fetch historical data.
 
 ## Tools and Libraries Used
 - **pandas**: For data manipulation and analysis.
 - **numpy**: For numerical operations and calculations.
 - **matplotlib**: For data visualization.
-- **seaborn**: For advanced visualizations (if used in any part of the code).
 - **yfinance**: For downloading financial data.
-- **arch**: For GARCH modeling.
+
+## Installation
+To install the required Python packages, run:
+```bash
+pip install -r requirements.txt
 
 ## Project Details
 
-### 1. Data Retrieval and Analysis
-- **S&P 500 Futures**: Downloads and analyzes S&P 500 futures data.
-- **Berkshire Hathaway**: Downloads and analyzes Berkshire Hathaway stock data.
-- **FAANG Stocks**: Constructs a portfolio with FAANG stocks and calculates returns.
-- **Volatility and Risk Metrics**: Computes annualized returns, volatility, and other risk metrics.
+### Data Fetching
+- **Historical Prices**: Scripts to download and manage historical price data for various financial instruments.
+- **Real-time Data**: Leverage `yfinance` to fetch real-time trading data.
 
-### 2. Visualization
-- **Return Distributions**: Plots histograms and KDE plots of returns for visual analysis.
-- **Cumulative Returns**: Visualizes cumulative returns and compares different portfolios.
-- **Correlation Matrix**: Displays a heatmap of correlations between FAANG stocks.
-- **Drawdowns**: Plots ongoing drawdowns for individual assets and portfolios.
+### Data Analysis
+- **Return Analysis**: Compute logarithmic returns, cumulative returns, and visualize their trends.
+- **Volatility Measurements**: Calculate daily and annualized volatility.
 
-### 3. Statistical Analysis
-- **t-Test**: Performs a t-test on portfolio returns to determine statistical significance.
-- **Skewness and Kurtosis**: Calculates and prints skewness and kurtosis of return distributions.
+### Risk Assessment
+- **Drawdown Analysis**: Track and visualize maximum drawdowns to assess potential risks.
+- **Risk Metrics**: Compute skewness and kurtosis to understand the distribution characteristics of returns.
 
-### 4. Volatility Clustering
-- **GARCH Model**: Fits a GARCH model to portfolio returns and plots conditional volatility.
+### Portfolio Management
+- **Portfolio Analysis**: Analyze and visualize the performance of mixed asset portfolios (e.g., 60-40 stock-bond).
 
-## Setup and Installation
-
-Ensure you have Python installed and then install the necessary Python packages:
-
-```bash
-pip install -r requirements.txt
+### Visualizations
+- **Interactive Plots**: Generate interactive charts to explore historical trends and volatility.
