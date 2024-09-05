@@ -1,23 +1,16 @@
 # Advanced Financial Metrics
 
 ## Project Overview
-This project encompasses a series of Python scripts designed to analyze financial data for different investment instruments, including S&P 500 Futures, 10-Year Treasury Futures, and a diversified investment portfolio. The analysis includes calculating Sharpe Ratios, annualized returns, and portfolio risk metrics, adjusted for inflation and risk-free rates.
+This project provides advanced financial data analysis tools focusing on futures such as S&P 500 and 10-Year Treasury Futures, alongside portfolio analysis including a 60-40 stock-bond portfolio. It calculates and visualizes various financial metrics like Sharpe Ratios, cumulative returns, and volatility, and adjusts inflation returns.
 
-## Tools and Libraries Used
-Ensure you have Python 3.6+ installed on your system. The following Python libraries are required:
-- **pandas**: For data manipulation and analysis.
-- **numpy**: For numerical operations.
-- **matplotlib**: For plotting and visualization.
-- **yfinance**: For downloading financial data.
-- **scipy**: For statistical calculations, including skewness and kurtosis.
-- **pandas_datareader**: For fetching inflation data from FRED.
+## Getting Started
+
+### Prerequisites
+- Python 3.6+
+- An active internet connection to fetch financial data.
 
 ### Installation
-Clone this repository and install the required Python packages:
-
-```bash
-git clone https://github.com/yourusername/financial-data-analysis.git
-cd financial-data-analysis
+To run these scripts, you will need to install several Python libraries. The easiest way to install these is by using pip and the requirements file included in this repository:
 pip install -r requirements.txt
 
 ## Project Details
@@ -29,7 +22,7 @@ pip install -r requirements.txt
 
 ### 2. Visualization
 - **Return Distributions**: Histograms and rolling Sharpe Ratios for S&P 500 Futures and Treasury Futures.
-- **Cumulative Returns and Drawdowns**: Plots cumulative returns and ongoing drawdowns for individual assets and the portfolio.
+- **Cumulative ongoing drawdowns for individual assets and the portfolio.
 - **Rolling Sharpe Ratio**: Visualizes the rolling Sharpe Ratio for different time windows.
 
 ### 3. Statistical Analysis
@@ -39,3 +32,18 @@ pip install -r requirements.txt
 
 ### 4. Inflation Adjustment
 - **Inflation Data**: Fetches CPI data from FRED, calculates annualized inflation, and adjusts the Sharpe Ratio for inflation.
+
+## Contributing
+We welcome contributions from the community. Here are some guidelines you should follow:
+
+1. **Fork the Repository**: Create a fork of our repository on your own GitHub account. This allows you to experiment with changes without affecting the original project.
+2. **Make Changes**: Make your modifications in your forked repository. Please keep your changes concise and make sure they follow the existing project structure.
+3. **Submit a Pull Request**: Once you are ready, submit a pull request to our repository. Include a clear description of the changes and the benefits they provide.
+
+### Pull Request Guidelines
+- Ensure that your code is well-documented and adheres to the existing style.
+- Update the README.md if necessary.
+- Add comments to your code where necessary to explain complex logic.
+
+## License
+This project is released under the MIT License. This allows you to use and modify the software freely for personal and commercial purposes under the conditions listed in the LICENSE file in this repository.
