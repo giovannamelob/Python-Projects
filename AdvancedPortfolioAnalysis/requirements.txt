@@ -1,7 +1,6 @@
-pandas
 numpy
+pandas
 matplotlib
 seaborn
 yfinance
 scipy
-pandas_datareader
