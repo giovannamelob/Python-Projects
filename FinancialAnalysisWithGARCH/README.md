@@ -1,39 +1,51 @@
 # Financial Analysis with GARCH
 
 ## Project Overview
-This project implements various financial analysis techniques including Walk-Forward Validation, Risk-Parity Portfolio construction, and the application of the GARCH (Generalized Autoregressive Conditional Heteroskedasticity) model. The focus is on analyzing historical stock and futures data, calculating excess returns, and evaluating risk-adjusted performance metrics.
+This project analyzes Berkshire Hathaway's stock performance relative to S&P 500 futures using advanced financial metrics, including the Information Ratio and volatility clustering via GARCH modeling. It includes return distributions, cumulative return plots, correlation analysis, statistical tests, and volatility clustering for FAANG portfolios.
 
-## Tools and Libraries Used
-- **pandas**: Data manipulation and analysis.
-- **numpy**: Numerical operations.
-- **yfinance**: Downloading financial data.
-- **matplotlib**: Plotting and visualization.
-- **seaborn**: Advanced data visualization.
-- **scipy**: Statistical tests.
-- **arch**: GARCH model for volatility clustering.
+## Getting Started
+
+### Prerequisites
+- Python 3.6+
+- An active internet connection to fetch financial data.
+
+### Installation
+To run these scripts, you will need to install several Python libraries. The easiest way to install these is by using pip and the requirements file included in this repository:
+pip install -r requirements.txt
+
 
 ## Project Details
 
-### Data Analysis
-- **Download Data**: Fetches historical data for Berkshire Hathaway stock and S&P 500 front month futures.
-- **Log Returns**: Computes daily logarithmic returns for the stocks and futures.
-- **Excess Returns**: Calculates excess returns over the risk-free rate.
-- **Information Ratio**: Evaluates performance with the Information Ratio.
+### 1. Data Retrieval and Analysis
+- **Berkshire Hathaway vs. S&P 500 Futures**: The project downloads stock data for Berkshire Hathaway and S&P 500 futures, computes the daily logarithmic returns, excess returns, and annualized excess returns.
+- **Information Ratio**: Calculates the Information Ratio, which compares the performance of Berkshire Hathaway relative to the S&P 500 futures based on annualized excess returns and tracking error.
 
-### Visualizations
-- **Return Distributions**: Histograms and KDE plots of returns for Berkshire Hathaway and S&P 500 futures.
-- **Cumulative Returns**: Plots cumulative returns for Berkshire Hathaway, S&P 500 futures, and other portfolios.
-- **Correlation Matrix**: Heatmap of correlation between FAANG stocks.
+### 2. Visualization
+- **Return Distributions**: Plots histograms with KDE (Kernel Density Estimation) for both Berkshire Hathaway and S&P 500 futures' returns.
+- **Cumulative Returns**: Visualizes the cumulative returns for Berkshire Hathaway, S&P 500 futures, FAANG portfolios, and the NASDAQ.
+- **Correlation Matrix**: Computes and visualizes the correlation matrix for FAANG stocks using a heatmap.
 
-### Statistical Analysis
-- **t-Test**: Performs a t-test on portfolio returns to check if the mean return is significantly different from zero.
+### 3. Statistical Analysis
+- **t-test**: Performs a one-sample t-test to determine whether the FAANG portfolio returns are significantly different from zero.
+  
+### 4. Volatility Clustering (GARCH Model)
+- **GARCH Model**: Fits a GARCH(1,1) model to the FAANG portfolio returns to analyze volatility clustering. Conditional volatility is plotted over time to capture fluctuations in portfolio risk.
 
-### Volatility Clustering
-- **GARCH Model**: Fits a GARCH model to portfolio returns to analyze volatility clustering and plots the conditional volatility.
+## Contributing
+We welcome contributions from the community. Here are some guidelines you should follow:
 
-## Setup and Installation
+1. **Fork the Repository**: Create a fork of our repository on your own GitHub account. This allows you to experiment with changes without affecting the original project.
+2. **Make Changes**: Make your modifications in your forked repository. Please keep your changes concise and make sure they follow the existing project structure.
+3. **Submit a Pull Request**: Once you are ready, submit a pull request to our repository. Include a clear description of the changes and the benefits they provide.
 
-Ensure you have Python installed and then install the necessary Python packages:
+### Pull Request Guidelines
+- Ensure that your code is well-documented and adheres to the existing style.
+- Update the README.md if necessary.
+- Add comments to your code where necessary to explain complex logic.
 
-```bash
-pip install -r requirements.txt
+## License
+This project is released under the MIT License. This allows you to use and modify the software freely for personal and commercial purposes under the conditions listed in the LICENSE file in this repository.
+
+## Contact
+- Giovanna Melo Benites - melobenitesgiovanna@gmail.com
+- Project Link: https://github.com/giovannamelob/Python-Projects/tree/main/FinancialAnalysisWithGARCH
